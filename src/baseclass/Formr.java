@@ -1393,7 +1393,7 @@ public abstract class Formr extends javax.swing.JInternalFrame {
             }
 
         } catch (Exception ex) {
-            System.out.println(" Общая ошибка:" + ex.toString());
+            System.out.println(" Общая ошибка из класса Formr:" + ex.toString());
             return null;
 
         }
