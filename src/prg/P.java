@@ -1594,10 +1594,10 @@ public class P {
         Cursorr DATA;
         String time_1 = FF.DATETIMES();
         try {
-//            if (CONN.isValid(2) == false) {
-            if (CONN.isClosed() == true) {
+            if (CONN.isValid(5) == false) {
+          //  if (CONN.isClosed() == true) {
                 if (V.CONN_AUTO == false) {
-                    P.MESS(" Соединение разорвано... \nНажмите OK для восстановления");
+                    P.MESS(FF.DATETIMEMS()+" Соединение разорвано... \nНажмите OK для восстановления");
                 } else {
                     V.CONN_OUT = false;
                     V.CONN_REP = 0;

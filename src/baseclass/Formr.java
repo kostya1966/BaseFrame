@@ -172,7 +172,7 @@ public abstract class Formr extends javax.swing.JInternalFrame {
     public void INIT_COR(Formr form) {
     }
 
-    public void STATUS(String name) {
+    public void STATUS(String name) { //как пример для других прриложений
         if (V.USER_ADMIN < 2 && !V.USER_DIR) {
             P.MESS("Вы не имеете достаточно прав на операцию открытия-закрытия документов   \n Обратитесь к службе сопровождения ПО ");
             return;

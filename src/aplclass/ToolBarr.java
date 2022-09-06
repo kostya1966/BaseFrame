@@ -103,7 +103,7 @@ public class ToolBarr extends JToolBar {
         super.setSize(width, height);
         super.setOpaque(true);
         super.setBackground(V.COLORB_TOOLBAR);
-
+        P.prn(getClass().getResource("/icons/Misc-Database-3-icon.png").toString());
         WIZARD = new JButton(new javax.swing.ImageIcon(getClass().getResource("/icons/Misc-Database-3-icon.png")));
         WIZARD.setToolTipText("Список таблиц базы данных");
         WIZARD.addActionListener(new ActionListener() {//слушатель кнопки

@@ -555,10 +555,13 @@ GraphicsDevice[] devices = environment.getScreenDevices(); // количеств
 
     public void SETICON(String file) {
         ArrayList<Image> iCont = new ArrayList<Image>();
+        try {
         iCont.add(new javax.swing.ImageIcon(getClass().getResource(file)).getImage()); //"/icons/POS-21.jpg"
-        //iCont.add(new ImageIcon(getClass().getResource(file)).getImage()); //"/icons/POS-21.jpg"
-        
         setIconImages(iCont);
+        } catch (Exception e) {
+        System.err.println("Ошибка загрузки иконки  "+file);
+        }
+        
 
     }
 
